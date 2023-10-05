@@ -67,14 +67,14 @@
 
             <li class="sidebar-title">Menu Penguna</li>
             <li class="sidebar-item">
-                <a href="/user/logbook.html" class='sidebar-link'>
+                <a href="user-logbook.html" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Logbook</span>
                 </a>
             </li> 
 
 <li class="sidebar-item">
-                <a href="/user/fund-request.html" class='sidebar-link'>
+                <a href="user-fund-request.html" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Pengajuan dana</span>
                 </a>
@@ -137,13 +137,13 @@
             </li>
 
             <li class="sidebar-item">
-                <a href="/admin/invoice.html" class='sidebar-link'>
+                <a href="admin-invoice.html" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Pencairan Dana</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="/admin/logbook-verification.html" class='sidebar-link'>
+                <a href="admin-logbook-verification.html" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Verifkasi Logbook</span>
                 </a>
@@ -183,7 +183,7 @@
                         <h5 class="card-title">Pencairan Dana Beasiswa</h5>
                     </div>
                     <div class="d-none d-md-block">
-                        <!-- <a href="/admin/logbook-verification-detail.html" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="plus" class="wd-10 mg-r-5"></i> Tambah</a> -->
+                        <!-- <a href="admin-invoice-detail.html" class="btn btn-sm pd-x-15 btn-primary btn-uppercase mg-l-5"><i data-feather="plus" class="wd-10 mg-r-5"></i> Tambah</a> -->
                     </div>
                 </div>
             </div>
@@ -194,6 +194,7 @@
                             <th>No</th>
                             <th>Tanggal</th>
                             <th>Status Logbook</th>
+                            <th>Tanggal Pencairan Terakhir</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -202,19 +203,22 @@
                             <td>1</td>
                             <td>Naufal Fadhil</td>
                             <td>10/10</td>
-                            <td><a href="/admin/logbook-verification-detail.html" class="btn btn-primary">Detail</a></td>
+                            <td>Telah ditransfer</td>
+                            <td><a href="admin-invoice-detail.html" class="btn btn-primary">Detail</a></td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Rachmat Jackly</td>
                             <td>10/10</td>
-                            <td><a href="/admin/logbook-verification-detail.html" class="btn btn-primary">Detail</a></td>
+                            <td>Menuggu Pencairan</td>
+                            <td><a href="admin-invoice-detail.html" class="btn btn-primary">Detail</a></td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Fikri Syahfalaq</td>
                             <td>8/10</td>
-                            <td><a href="/admin/logbook-verification-detail.html" class="btn btn-primary">Detail</a></td>
+                            <td>Verifikasi Logbook</td>
+                            <td><a href="admin-invoice-detail.html" class="btn btn-primary">Detail</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -235,9 +239,15 @@
     </div>
     <script src="../assets/static/js/components/dark.js"></script>
     <script src="../assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    
+    
     <script src="../assets/compiled/js/app.js"></script>
-    <script src="../assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
-    <script src="../assets/static/js/pages/simple-datatables.js"></script>
+    
+
+    
+<script src="../assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
+<script src="../assets/static/js/pages/simple-datatables.js"></script>
+
 </body>
 
 </html>
