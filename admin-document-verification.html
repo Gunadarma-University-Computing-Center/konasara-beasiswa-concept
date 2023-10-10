@@ -67,7 +67,7 @@
                     <ul class="menu">
         
                         <li class="sidebar-title">Menu Penguna</li>
-                        <li class="sidebar-item active">
+                        <li class="sidebar-item">
                             <a href="dokumen.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dokumen</span>
@@ -87,7 +87,7 @@
                         </li>
         
                         <li class="sidebar-title">Menu Admin</li>
-                        <li class="sidebar-item ">
+                        <li class="sidebar-item">
                             <a href="index.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
@@ -128,7 +128,7 @@
                                 <span>Pencairan Dana</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
+                        <li class="sidebar-item active">
                             <a href="admin-document-verification.html" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Verifkasi Dokumen</span>
@@ -159,39 +159,91 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Upload Dokumen</h4>
+                                <h4 class="card-title">Data Diri</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-xl-2">
+                                        <label for="first-name-horizontal">Nama</label>
+                                    </div>
+                                    <div class="col-md-8 col-xl-10 form-group">
+                                        <input type="text" class="form-control" value="Ucup" disabled>
+                                    </div>
+                                    <div class="col-md-4 col-xl-2">
+                                        <label for="first-name-horizontal">No KTP</label>
+                                    </div>
+                                    <div class="col-md-8 col-xl-10 form-group">
+                                        <input type="text" class="form-control" value="32133" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Verifikasi Dokumen</h4>
                             </div>
 
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">KTP</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                                    <div class="col-12">
+                                        <div class="table-responsive">
+                                            <table class="table table-lg">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Dokumen</th>
+                                                        <th>URL</th>
+                                                        <th>Terverifikasi</th>
+                                                        <th>Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-bold-500">KTP</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Ktp.pdf</a></td>
+                                                        <td></i></td>
+                                                        <td>
+                                                            <button class="btn btn-primary">Verifikasi</button>
+                                                            <button class="btn btn-danger">Tolak</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold-500">KK</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Dokumen.pdf</a></td>
+                                                        <td><i class="bi bi-file-earmark-x text-danger"></i></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                                    <tr>
+                                                        <td class="text-bold-500">Ijazah</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Ktp.pdf</a></td>
+                                                        <td><i class="bi bi-file-earmark-check text-success"></i></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold-500">Surat Rekomendasi</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Dokumen.pdf</a></td>
+                                                        <td><i class="bi bi-file-earmark-x text-danger"></i></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold-500">Surat Pakta Integritas</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Dokumen.pdf</a></td>
+                                                        <td><i class="bi bi-file-earmark-x text-danger"></i></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-bold-500">Surat pembuat Keputusan</td>
+                                                        <td><a href=""><i class="bi bi-link-45deg"></i> Dokumen.pdf</a></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <button class="btn btn-primary">Verifikasi</button>
+                                                            <button class="btn btn-danger">Tolak</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">KK</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                    </div>
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">Ijazah Terakhir</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                    </div>
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">Raport</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                    </div>
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">Surat Rekomendasi</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                    </div>
-                                    <div class="col-12 mt-5">
-                                        <label for="formFileLg" class="form-label">Surat Pakta Integritas</label>
-                                        <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                    </div>
-                                </div>
-                                <div class="col-12 d-flex justify-content-end mt-5">
-                                    <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
-                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
                                 </div>
                             </div>
                         </div>
